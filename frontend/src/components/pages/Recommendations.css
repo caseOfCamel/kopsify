@@ -1,0 +1,59 @@
+/* src/components/pages/Recommendations.css */
+
+.recommendations-page {
+    padding: var(--spacing-lg) 0 var(--spacing-3xl);
+  }
+  
+  .recommendations-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .page-title {
+    font-size: var(--font-size-3xl);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+  }
+  
+  .username-display {
+    color: var(--color-text);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .page-description {
+    font-size: var(--font-size-lg);
+    line-height: 1.5;
+    color: var(--color-text);
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .no-results {
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .no-results p {
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-lg);
+  }
+  
+  .reset-filters-btn {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: background-color var(--transition-default);
+  }
+  
+  .reset-filters-btn:hover {
+    background-color: rgba(255, 219, 0, 0.8);
+  }

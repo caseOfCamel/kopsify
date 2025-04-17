@@ -1,0 +1,103 @@
+/* src/components/ui/FilterBar.css */
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-secondary);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .filter-section {
+    flex: 1 1 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .filter-section {
+      flex: 0 1 auto;
+    }
+    
+    .search-section {
+      flex: 1 1 auto;
+    }
+  }
+  
+  .filter-search {
+    position: relative;
+    width: 100%;
+  }
+  
+  .filter-search .search-input {
+    width: 100%;
+    padding-right: 30px;
+  }
+  
+  .clear-search {
+    position: absolute;
+    right: var(--spacing-sm);
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: var(--spacing-xs);
+    cursor: pointer;
+    color: var(--color-text);
+    opacity: 0.5;
+    transition: opacity var(--transition-default);
+  }
+  
+  .clear-search:hover {
+    opacity: 1;
+  }
+  
+  .filter-label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .category-select {
+    width: 100%;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-md);
+    background-color: white;
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+  }
+  
+  @media (min-width: 768px) {
+    .category-select {
+      min-width: 180px;
+    }
+  }
+  
+  .reset-section {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .reset-filters-btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-md);
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: all var(--transition-default);
+  }
+  
+  .reset-filters-btn:hover:not(:disabled) {
+    background-color: var(--color-secondary);
+  }
+  
+  .reset-filters-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

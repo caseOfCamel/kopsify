@@ -1,0 +1,94 @@
+/* src/components/ui/Button.css */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all var(--transition-default);
+    border: none;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  /* Button variants */
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+  }
+  
+  .btn-primary:hover:not(:disabled) {
+    background-color: rgba(255, 219, 0, 0.85);
+  }
+  
+  .btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+  }
+  
+  .btn-secondary:hover:not(:disabled) {
+    background-color: #e0e0e0;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-text);
+  }
+  
+  .btn-outline:hover:not(:disabled) {
+    background-color: var(--color-primary);
+  }
+  
+  .btn-text {
+    background-color: transparent;
+    color: var(--color-text);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .btn-text:hover:not(:disabled) {
+    color: var(--color-primary);
+  }
+  
+  /* Button sizes */
+  .btn-sm {
+    font-size: var(--font-size-xs);
+    padding: 6px 12px;
+    min-height: 32px;
+  }
+  
+  .btn-md {
+    font-size: var(--font-size-sm);
+    padding: 8px 16px;
+    min-height: 40px;
+  }
+  
+  .btn-lg {
+    font-size: var(--font-size-base);
+    padding: 12px 24px;
+    min-height: 48px;
+  }
+  
+  /* Full width */
+  .btn-full-width {
+    width: 100%;
+  }
+  
+  /* Disabled state */
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* Button with icon */
+  .btn svg {
+    margin-right: 8px;
+  }
+  
+  .btn-icon-only svg {
+    margin-right: 0;
+  }

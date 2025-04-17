@@ -1,0 +1,193 @@
+/* src/components/layout/Header.css */
+
+.site-header {
+    background-color: var(--color-primary);
+    padding: var(--spacing-md) 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    flex: 0 0 auto;
+    padding-right: var(--spacing-md);
+  }
+  
+  .logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+    background: none;
+    border: none;
+    padding: var(--spacing-sm);
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 1024px) {
+    .nav-item {
+      margin: 0 var(--spacing-md);
+    }
+  }
+  
+  .nav-link {
+    display: block;
+    color: var(--color-text);
+    font-weight: 500;
+    text-decoration: none;
+    padding: var(--spacing-xs) 0;
+    transition: var(--transition-default);
+  }
+  
+  .nav-link:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .search-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: var(--spacing-md);
+    display: none;
+  }
+  
+  @media (min-width: 1024px) {
+    .search-container {
+      display: block;
+      width: 220px;
+    }
+  }
+  
+  .search-input {
+    padding: var(--spacing-xs) var(--spacing-lg) var(--spacing-xs) var(--spacing-sm);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius-full);
+    width: 100%;
+    background-color: white;
+  }
+  
+  .search-button {
+    position: absolute;
+    right: var(--spacing-xs);
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: var(--spacing-xs);
+    cursor: pointer;
+    color: var(--color-text);
+  }
+  
+  .user-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-control-item {
+    padding: var(--spacing-xs);
+    margin-left: var(--spacing-sm);
+    color: var(--color-text);
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--color-text);
+    color: white;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  /* Hide the mobile menu button on desktop */
+  @media (min-width: 1024px) {
+    .mobile-menu-button {
+      display: none;
+    }
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-text);
+    transition: var(--transition-default);
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .main-nav .nav-list {
+    display: flex;                  /* lay out <li>’s in a row */
+    align-items: center;            /* vertically center them */
+    justify-content: space-between; /* spread them across the full width */
+    gap: 1.5rem;                    /* uniform space between each item */
+    list-style: none;               /* remove bullets */
+    margin: 0;                      /* reset default ul margins */
+    padding: 0;                     /* reset default ul padding */
+  }
+  
+  .main-nav .nav-item {
+    margin: 0;                      /* make sure there’s no extra item margin */
+  }
+  
+  /* if you want them to wrap on smaller screens: */
+  @media (max-width: 768px) {
+    .main-nav .nav-list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 1024px) {
+    .nav-list {
+      flex-direction: row;
+    }
+  }
+  
+  .nav-item {
+    margin: var(--spacing-xs) 0;
+  }
+  
+  /* @media ( */

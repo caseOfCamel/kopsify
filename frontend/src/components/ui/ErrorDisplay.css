@@ -1,0 +1,36 @@
+/* src/components/ui/ErrorDisplay.css */
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-2xl) var(--spacing-md);
+    margin: var(--spacing-xl) 0;
+    background-color: #fff8f8;
+    border: 1px solid #ffcccc;
+    border-radius: var(--border-radius-md);
+  }
+  
+  .error-icon {
+    color: var(--color-error);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .error-title {
+    font-size: var(--font-size-xl);
+    margin: 0 0 var(--spacing-md);
+    color: var(--color-error);
+  }
+  
+  .error-message {
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    margin: 0 0 var(--spacing-lg);
+    max-width: 600px;
+  }
+  
+  .retry-button {
+    min-width: 120px;
+  }
